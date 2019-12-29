@@ -23,11 +23,12 @@ const endGame = (winningSequence) => {
     winningSequence.forEach(boxEl => boxEl.classList.add('winner'));
     disableListeners();
 }
+
 // Check to see if player won
 const checkForWin = () => {
     let victory = false;
 
-    // Checks to see if the comb matches the one of the winning combinations array
+    // Checks to see if the comb matches one of the winning combinations array
     winningCombinations.forEach(comb => {
         const _grid = grid();
         const sequence = [_grid[comb[0]], _grid[comb[1]], _grid[comb[2]]];
