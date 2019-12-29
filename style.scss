@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    background: rgb(68, 212, 117);
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+// App
+.app {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    .container {
+        height: 400px;
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            .box {
+                width: 199px;
+                height: 133px;
+                border: 3px solid rgb(41, 56, 69);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(41, 56, 69);
+                transition: .1s ease-in-out;
+                cursor: pointer;
+                &#box-0, &#box-3 {
+                    border-top: none;
+                    border-left: none;
+                }
+                &#box-1, &#box-4 {
+                    border-top: none;
+                }
+                &#box-2, &#box-5 {
+                    border-top: none;
+                    border-right: none;
+                }
+                &#box-6 {
+                    border-top: none;
+                    border-left: none;
+                    border-bottom: none;
+                }
+                &#box-7 {
+                    border-top: none;
+                    border-bottom: none;
+                }
+                &#box-8 {
+                    border-top: none;
+                    border-right: none;
+                    border-bottom: none;
+                }
+                &:hover {
+                    background: lightblue;
+                }
+                &.winner {
+                    color: red;
+                    font-size: 2rem;
+                }
+            }
+        }
+        .new-game {
+            text-align: center;
+            margin: 40px 0;
+            button {
+                background: rgb(41, 56, 69);
+                color: rgb(68, 212, 117);
+                border: none;
+                padding: 8px 14px;
+                font-weight: 600;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

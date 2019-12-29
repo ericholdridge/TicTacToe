@@ -1,0 +1,115 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  background: #44d475;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .container {
+  height: 400px;
+}
+
+.app .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.app .container .row .box {
+  width: 199px;
+  height: 133px;
+  border: 3px solid #293845;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #293845;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  cursor: pointer;
+}
+
+.app .container .row .box#box-0, .app .container .row .box#box-3 {
+  border-top: none;
+  border-left: none;
+}
+
+.app .container .row .box#box-1, .app .container .row .box#box-4 {
+  border-top: none;
+}
+
+.app .container .row .box#box-2, .app .container .row .box#box-5 {
+  border-top: none;
+  border-right: none;
+}
+
+.app .container .row .box#box-6 {
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.app .container .row .box#box-7 {
+  border-top: none;
+  border-bottom: none;
+}
+
+.app .container .row .box#box-8 {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.app .container .row .box:hover {
+  background: lightblue;
+}
+
+.app .container .row .box.winner {
+  color: red;
+  font-size: 2rem;
+}
+
+.app .container .new-game {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.app .container .new-game button {
+  background: #293845;
+  color: #44d475;
+  border: none;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
